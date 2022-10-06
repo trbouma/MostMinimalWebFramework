@@ -105,7 +105,11 @@ if __name__ == "__main__":
 
     @app.route("/")
     def f(request):
-        return Response("Hello World")
+        return Response("Hello World!")
+    
+    @app.route("/tim")
+    def f(request):
+        return Response("Hello Tim!")
 
     @app.route("/json-response/")
     def json_response(request):
